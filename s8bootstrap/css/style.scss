@@ -1,0 +1,77 @@
+// $very-dark-magenta: hsl(300, 43%, 22%)
+// $soft-pink: hsl(333, 80%, 67%)
+
+
+$colors:("very-dark-magenta":hsl(300, 43%, 22%),"soft-pink":hsl(333, 80%, 67%), "dark-grayish-magenta": hsl(303, 10%, 53%),
+"light-grayish-magenta": hsl(300, 24%, 96%), "white": hsl(0, 0%, 100%));
+
+@each $name, $color in $colors{
+    .text-color-#{$name}{
+        color: $color;
+    }
+}
+
+@each $name, $color in $colors{
+    .bg-color-#{$name}{
+        background-color: $color;
+    }
+}
+
+body{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+.q
+.stars{
+    img{
+        // filter: drop-shadow(30px 0px 0px #ef9545) drop-shadow(150px 0px 0px #ef9545) ;
+    }
+    // width: 100%;
+    // height: 2rem;
+    // background-image: url("../img/icon-star.svg");
+    // background-repeat: 5;
+}
+
+
+.card{
+    .card-body{
+        .card-title{
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+
+.sub-title-card{
+    color: hsl(333, 80%, 67%);
+}
+
+.img{
+    border-radius: 100%;
+    padding: 1em;
+}
+
+.container-stars{
+    width: 30rem;
+    height: 5rem;
+    display: flex;
+    margin: auto;
+    padding: 2em;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.column-2 {
+    margin: 6em auto 0;
+}  
+
+.contain-of-containers-s3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    height: calc(275px + 10em);
+    width: 90%;
+    margin: 3em auto;
